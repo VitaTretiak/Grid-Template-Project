@@ -1,0 +1,74 @@
+.header-content {
+    z-index: 1;
+    width: 100%;
+    
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        
+        @include sm {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .btn:first-of-type {
+            @include sm-min {
+                margin-right: $gap;
+            }
+            @include sm {
+                margin-bottom: $gap;
+            }
+        }
+        .btn:focus,
+        .btn:hover {
+            background-color: $color-accent;
+        }
+        .btn {
+            display: block;
+            height: 60px;
+            letter-spacing: 0.1em;
+            
+            
+            border: 2px solid $color-light;
+            
+            background-color: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: background-color 0.5s;
+            
+            @include lg-min {
+                min-width: 250px;
+                height: 60px;
+                padding: 18px $gap;
+                font-size: 1.125rem;
+                
+                
+            }
+            @include lg-md {
+                min-width: 200px;
+                height: 50px;
+                padding: 14px $gap;
+                
+            }
+            @include md {
+                min-width: 170px;
+                height: 40px;
+                padding: 10px $gap;
+                
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+        margin: 0 0 53px;
+        
+    }
+    
+    
+    &__container {
+        max-width: 1340px;
+        padding-left: $gap;
+        padding-right: $gap;
+        margin: auto;
+        
+    }
+}

@@ -1,0 +1,112 @@
+.about__content h2 {
+    margin-top: 0;
+    padding-bottom: $gap;
+}
+.about {
+    letter-spacing: 0.055em;
+    background-color: $color-gray-light;
+    
+    &__image {
+        
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        
+        img {
+            
+            max-width: 100%;
+            max-height: 480px;
+        }
+    }
+    &__container {
+        display: grid;
+        
+        @extend %container;
+        @include lg-min {
+            grid-gap: $gap * 5;
+            grid-template-columns: 1fr 271px;
+        }
+        @include lg-md {
+            grid-gap: $gap * 2;
+            grid-template-columns: 1fr 271px;
+            
+        }
+        @include md-sm {
+            grid-gap: $gap;
+            grid-template-columns: 1fr 236px;
+        }
+        @include sm {
+            grid-gap: $gap;
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    &__content {
+        padding-top: $gap * 5;
+        padding-bottom: $gap * 5;
+        
+        @include lg-md {
+            padding-top: $gap * 4;
+            padding-bottom: $gap * 4;
+        }
+        @include md {
+            padding-top: $gap * 3;
+            padding-bottom: $gap * 3;
+        }
+        
+        p {
+            display: block;
+            text-align: left;
+            font-size: 1.125rem;
+            letter-spacing: 0.05em;
+            line-height: 1.15em;
+            transition: color 0.5s;
+            font-family: $font-main;
+            color: $color-gray;
+            
+            @include lg-md {
+                font-size: 1rem;
+            }
+            @include md {
+                font-size: 1rem;
+                letter-spacing: 0.055em;
+            }
+            @include md-sm {
+                font-size: 1rem;
+            }
+            
+            &:last-of-type {
+                margin: 0;
+            }
+            &:first-of-type {
+                position: relative;
+                margin-top: (-$gap) / 4;
+                
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    width: 2px;
+                    height: 200px;
+                    content: "";
+                    background-color: rgba($color-gray, 0.1);
+                    
+                    @include lg-min {
+                        right: -50px;
+                    }
+                    @include lg-md {
+                        right: -$gap;
+                    }
+                    @include md-sm {
+                        right: -$gap / 2;
+                    }
+                    @include sm {
+                        display: none;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}
+
