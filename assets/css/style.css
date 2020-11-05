@@ -777,7 +777,6 @@ input {
 
 .skills__container {
   display: grid;
-  grid-auto-rows: 230px;
   padding-bottom: 20px;
 }
 
