@@ -79,17 +79,20 @@
         
         &::placeholder {
             color: $color-gray;
+            
+            &:hover::placeholder,
+            &:focus::placeholder {
+                color: #9ba8b6;
+            }
         }
         &:hover, 
         &:focus {
             border-color: rgba(255, 255, 255, 0.15);
             border-bottom-color: $color-light;
             background-color: rgba(255, 255, 255, 0.15);
+            outline: none;
         }
-        &:hover::placeholder,
-        &:focus::placeholder {
-            color: #9ba8b6;
-        }
+        
     }
 }
 

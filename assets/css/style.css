@@ -543,6 +543,7 @@ section {
 
 input {
   margin: 0;
+  overflow: visible;
 }
 
 .header {
@@ -1023,30 +1024,31 @@ input {
   color: #637588;
 }
 
+.form-item__input::-webkit-input-placeholder:hover::-webkit-input-placeholder, .form-item__input::-webkit-input-placeholder:focus::-webkit-input-placeholder {
+  color: #9ba8b6;
+}
+
+.form-item__input::-moz-placeholder:hover::-moz-placeholder, .form-item__input::-moz-placeholder:focus::-moz-placeholder {
+  color: #9ba8b6;
+}
+
+.form-item__input:-ms-input-placeholder:hover:-ms-input-placeholder, .form-item__input:-ms-input-placeholder:focus:-ms-input-placeholder {
+  color: #9ba8b6;
+}
+
+.form-item__input::-ms-input-placeholder:hover::-ms-input-placeholder, .form-item__input::-ms-input-placeholder:focus::-ms-input-placeholder {
+  color: #9ba8b6;
+}
+
+.form-item__input::placeholder:hover::placeholder, .form-item__input::placeholder:focus::placeholder {
+  color: #9ba8b6;
+}
+
 .form-item__input:hover, .form-item__input:focus {
   border-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.15);
-}
-
-.form-item__input:hover::-webkit-input-placeholder, .form-item__input:focus::-webkit-input-placeholder {
-  color: #9ba8b6;
-}
-
-.form-item__input:hover::-moz-placeholder, .form-item__input:focus::-moz-placeholder {
-  color: #9ba8b6;
-}
-
-.form-item__input:hover:-ms-input-placeholder, .form-item__input:focus:-ms-input-placeholder {
-  color: #9ba8b6;
-}
-
-.form-item__input:hover::-ms-input-placeholder, .form-item__input:focus::-ms-input-placeholder {
-  color: #9ba8b6;
-}
-
-.form-item__input:hover::placeholder, .form-item__input:focus::placeholder {
-  color: #9ba8b6;
+  outline: none;
 }
 
 .posts h2 {
