@@ -1346,6 +1346,7 @@ input {
     min-width: 200px;
     height: 50px;
     padding: 14px 20px;
+    font-size: 1rem;
   }
   .skills__container {
     grid-gap: 10px;
@@ -1387,6 +1388,12 @@ input {
     font-size: 1.5rem;
   }
   p {
+    font-size: 1rem;
+  }
+  .header-content__buttons .btn {
+    min-width: 170px;
+    height: 40px;
+    padding: 10px 20px;
     font-size: 1rem;
   }
   .skills__container {
@@ -1437,11 +1444,6 @@ input {
     text-align: right;
     background-color: rgba(68, 89, 110, 0.9);
   }
-  .header-content__buttons .btn {
-    min-width: 170px;
-    height: 40px;
-    padding: 10px 20px;
-  }
   .about__content {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1476,6 +1478,12 @@ input {
   }
   .header-content__buttons .btn:first-of-type {
     margin-bottom: 20px;
+  }
+  .header-content__buttons .btn {
+    min-width: 170px;
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 1rem;
   }
   .skills {
     padding: 20px;
