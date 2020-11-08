@@ -94,6 +94,12 @@
     min-height: calc(33.3333vh - 13.3333px);
     position: relative;
     overflow: hidden;
+    @media (min-height: 691px) {
+        min-height: calc(33.33vh - #{$gap} * 0.66);
+    }
+    @media (max-height: 690px) {
+        min-height: calc(230px - #{$gap} * 0.66);
+    }
     
     &:nth-of-type(1) {
         grid-area: a1;
@@ -164,6 +170,9 @@
         transition: color 0.5s;
         
         @include md-sm {
+            font-size: 1.125rem;
+        }
+        @include sm {
             font-size: 1.125rem;
         }
     }
